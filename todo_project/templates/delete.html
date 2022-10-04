@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<form method="POST">
+    {% csrf_token %}
+    <div class="delete">
+        <div class="container">
+            <div class="col-md-8">
+                <div class="shadow card" style="background-color: lavender">
+                    <div class="card-title" style="padding: 10px;">
+                        <h5>Are you sure want to delete the task</h5>
+                        <div class="card-body">
+                            <button class="btn btn-warning" type="submit">Confirm</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+{% endblock %}
